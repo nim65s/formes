@@ -22,6 +22,9 @@ class Rond(Forme):
     def __str__(self) -> str:
         return f"rond de rayon {self.a} de couleur {self.couleur}"
 
+    def __add__(self, other):
+        return Rond(self.a + other.a)
+
 
 class Quadrilatère(Forme):
     a: float
@@ -38,7 +41,7 @@ class Quadrilatère(Forme):
     def __str__(self) -> str:
         return (
             f"quadrilatère de côtés {self.a}, {self.b}, {self.c} "
-            "et {self.d}  de couleur {self.couleur}"
+            f"et {self.d}  de couleur {self.couleur}"
         )
 
 
