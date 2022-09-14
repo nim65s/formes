@@ -4,4 +4,4 @@ class Forme:
     color: str = "noire"
 
     def __str__(self) -> str:
-        return f"forme indéfinie de couleur {self.color}"
+        return f"forme indéfinie de couleur {self.coler}"
